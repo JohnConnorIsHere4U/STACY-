@@ -1,0 +1,9 @@
+contract ExampleVault:
+
+    function deposit(amount):
+        REQUIRE: amount > 0
+        balance += amount
+
+    function withdraw(amount):
+        REQUIRE: balance >= amount
+        balance -= amount
