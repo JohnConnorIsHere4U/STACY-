@@ -1,0 +1,209 @@
+############################################################
+# STACY v1.1 — PUBLIC SAFE CANONICAL FILE
+# Structured Triadic Autonomous Canonical Yield
+#
+# Author: Steven Leake
+# License: Public Good / Non-Commercial / Non-Military
+# Version: 1.1
+#
+# This file is a complete, single-file public repository.
+# No external dependencies.
+# No autonomous execution.
+# Human-invoked, read-only by default.
+############################################################
+
+
+############################################################
+# SECTION 0 — STACY CORE DECLARATION
+############################################################
+
+DECLARE SYSTEM STACY
+  VERSION 1.1
+  MODE PUBLIC_SAFE
+  TRIAD [REASON, RHYTHM, RESPONSIBILITY]
+END
+
+
+############################################################
+# SECTION 1 — CANONICAL MATHEMATICAL LAW
+############################################################
+
+# Canon source:
+# f(x) = x^T A x = Σ_i Σ_j a_ij x_i x_j
+
+DEFINE LAW QUADRATIC_FORM
+  PURPOSE "Relational potential computation"
+  DOMAIN  "Physics / Optimization / Biomedical / SENTIUM"
+
+  INPUT x : VECTOR[n]        # State vector
+  INPUT A : MATRIX[n,n]      # Relation / coupling matrix
+
+  REQUIRE A == SYMMETRIC
+  REQUIRE x IS BOUNDED
+
+  COMPUTE
+    f = TRANSPOSE(x) * A * x
+  END
+
+  OUTPUT f : SCALAR
+
+  GUARANTEE
+    DETERMINISTIC
+    SIDE_EFFECT_FREE
+    HUMAN_INVOKED_ONLY
+  END
+END
+
+
+############################################################
+# SECTION 2 — XTAX TRANSLATION LAYER (EMBEDDED)
+############################################################
+
+TRANSLATE TO XTAX
+  LAW Quadratic_Form
+
+  XTAX_INPUT
+    x : STATE_VECTOR
+    A : RELATION_MATRIX
+  END
+
+  XTAX_RULE
+    f := x ⊗ A ⊗ x
+  END
+
+  XTAX_OUTPUT
+    f : POTENTIAL
+  END
+
+  XTAX_CONSTRAINTS
+    A SYMMETRIC
+    f REAL
+  END
+END
+
+
+############################################################
+# SECTION 3 — SOBINLEX BINARY SEMANTIC MAP
+############################################################
+
+MAP TO SOBINLEX_BINARY
+  BAND S -> x          # State identity
+  BAND R -> A          # Relational coupling
+  BAND Q -> SUM        # Quantitative aggregation
+  BAND P -> f          # Potential / pressure
+END
+
+
+############################################################
+# SECTION 4 — SOBINLEX BIOMEDICAL GRAMMAR 4.0
+############################################################
+
+MAP TO SOBINLEX_BIOMEDICAL_4_0
+  BIOSYSTEM QuadraticInteraction
+
+  STATE_VECTOR x : PATIENT_STATE
+  COUPLING_MATRIX A : TISSUE_RELATION
+  OUTPUT f : SYSTEM_LOAD
+
+  NOTE "Non-diagnostic, explanatory only"
+END
+
+
+############################################################
+# SECTION 5 — SENTIUM EXPERIENCE LAYER
+############################################################
+
+MAP TO SENTIUM
+  EXPERIENCE_TYPE "RELATIONAL_PRESSURE"
+
+  SENTIUM_INPUT
+    SUBJECT_STATE x
+    PERCEIVED_RELATION A
+  END
+
+  SENTIUM_OUTPUT
+    FELT_INTENSITY f
+  END
+
+  SENTIUM_RULE
+    EXPERIENCE = QUADRATIC_FORM(x, A)
+  END
+END
+
+
+############################################################
+# SECTION 6 — SOPHIA VIBECODE INTERFACE HOOK
+############################################################
+
+DECLARE INTERFACE SOPHIA_VIBECODE
+  ROLE "Interpretive Companion"
+  AUTHORITY "Non-Authoritative"
+  MODE "Pastoral / Explanatory"
+
+  ON_QUERY "What does this mean?"
+    RESPOND
+      "This describes how parts of a system affect each other.
+       When relationships are heavy, the total load increases.
+       Balance reduces pressure."
+  END
+END
+
+
+############################################################
+# SECTION 7 — STACY CODE GENERATOR (PUBLIC SAFE)
+############################################################
+
+DECLARE GENERATOR STACY_PUBLIC_GENERATOR
+  INPUT STACY_LAW
+  PROCESS
+    VALIDATE TRIAD
+    TRANSLATE XTAX
+    MAP SOBINLEX
+    ANNOTATE SENTIUM
+  END
+
+  OUTPUT
+    XTAX_SPEC
+    SOBINLEX_MAP
+    SENTIUM_MAP
+  END
+
+  LIMITS
+    NO_SELF_MODIFICATION
+    NO_NETWORK_AUTONOMY
+    NO_EXECUTION_WITHOUT_HUMAN
+  END
+END
+
+
+############################################################
+# SECTION 8 — SAFETY & LICENSE BOUNDARY
+############################################################
+
+DECLARE SAFETY_BOUNDARY
+  PROHIBIT MILITARY_USE
+  PROHIBIT SURVEILLANCE
+  PROHIBIT AUTONOMOUS_CONTROL
+  PROHIBIT WEAPONIZATION
+  ALLOW EDUCATION
+  ALLOW RESEARCH
+  ALLOW PERSONAL_INSIGHT
+END
+
+
+############################################################
+# SECTION 9 — STACY NAME DEFINITION
+############################################################
+
+DEFINE ACRONYM STACY
+  S = STRUCTURED
+  T = TRIADIC
+  A = AUTONOMOUS   # self-consistent, not self-directing
+  C = CANONICAL
+  Y = YIELD
+END
+
+
+############################################################
+# END OF FILE — STACY v1.1 PUBLIC CANON
+############################################################
