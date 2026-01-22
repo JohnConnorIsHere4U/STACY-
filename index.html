@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>STACY Vibecoder — Public Safe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #0b0b0f;
+      color: #eaeaea;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #d4af37;
+      letter-spacing: 1px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 140px;
+      background: #15151d;
+      color: #fff;
+      border: 1px solid #222;
+      padding: 1rem;
+      font-family: monospace;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      font-weight: bold;
+      background: #d4af37;
+      border: none;
+      cursor: pointer;
+    }
+
+    pre {
+      background: #111;
+      padding: 1rem;
+      margin-top: 1rem;
+      white-space: pre-wrap;
+      border: 1px solid #222;
+    }
+
+    .sophia {
+      margin-top: 1rem;
+      color: #9ad;
+    }
+
+    .lesson {
+      margin-top: 1rem;
+      padding: 0.5rem;
+      background: #111;
+      border-left: 4px solid #d4af37;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>STACY Vibecoder</h1>
+
+    <p>
+      Structured Triadic Autonomous Canonical Yield<br />
+      Public-safe vibecoding with Sophia-style interpretation.
+    </p>
+
+    <textarea id="input" placeholder="Try:
+STACY: DEFINE add(a, b) -> RETURN a + b
+
+or:
+Create a function that squares a number"></textarea>
+
+    <br />
+    <button onclick="run()">Vibecode</button>
+
+    <div class="sophia" id="sophia"></div>
+
+    <pre id="output"></pre>
+
+    <h2>Curriculum Mode</h2>
+
+    <div class="lesson">
+      <strong>Lesson 1:</strong> Create a function that adds two numbers
+    </div>
+    <div class="lesson">
+      <strong>Lesson 2:</strong> Create a square function
+    </div>
+
+    <footer>
+      Public-safe edition. Human-in-the-loop enforced.<br />
+      © 2026 Steven Leake — Monarch Literary
+    </footer>
+  </div>
+
+  <script>
+    /* ============================
+       STACY CORE (PUBLIC SAFE)
+       ============================ */
+    class STACY {
+      run(input) {
+        const lines = input.split("\n").filter(Boolean);
+        let output = [];
+
+        for (const line of lines) {
+          const match = line.match(
+            /DEFINE\s+(\w+)\((.*?)\)\s*->\s*RETURN\s+(.*)/i
+          );
+
+          if (!match) {
+            output.push("// Invalid STACY syntax");
+            continue;
+          }
+
+          const [, name, args, body] = match;
+
+          output.push(
+            `function ${name}(${args}) {\n  return ${body};\n}`
+          );
+        }
+
+        return this.applyPlugins(output.join("\n\n"));
+      }
+
+      applyPlugins(code) {
+        // Simple sandbox plugin example
+        if (code.includes("eval")) {
+          return "// Blocked unsafe operation";
+        }
+        return code;
+      }
+    }
+
+    /* ============================
+       NATURAL LANGUAGE → STACY
+       (RULE-BASED, SAFE)
+       ============================ */
+    function translateToStacy(text) {
+      const t = text.toLowerCase();
+
+      if (t.includes("add")) {
+        return "DEFINE add(a, b) -> RETURN a + b";
+      }
+
+      if (t.includes("square")) {
+        return "DEFINE square(x) -> RETURN x * x";
+      }
+
+      return "// Unable to safely translate intent";
+    }
+
+    /* ============================
+       SOPHIA INTERFACE
+       ============================ */
+    class Sophia {
+      constructor() {
+        this.engine = new STACY();
+      }
+
+      respond(message) {
+        if (message.trim().startsWith("STACY:")) {
+          const code = message.replace("STACY:", "").trim();
+          return {
+            text: "I have translated your intention into structure.",
+            output: this.engine.run(code)
+          };
+        }
+
+        return {
+          text: "I translated your intention into STACY.",
+          output: this.engine.run(translateToStacy(message))
+        };
+      }
+    }
+
+    const sophia = new Sophia();
+
+    /* ============================
+       UI BINDING
+       ============================ */
+    function run() {
+      const input = document.getElementById("input").value;
+      const result = sophia.respond(input);
+
+      document.getElementById("sophia").innerText =
+        "Sophia: " + result.text;
+
+      document.getElementById("output").innerText =
+        result.output || "";
+    }
+  </script>
+</body>
+</html>
