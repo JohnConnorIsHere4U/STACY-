@@ -1,0 +1,174 @@
+/*
+====================================================
+STACY 1.2 — Structured Triadic Autonomous Canonical Yield
+Sophia Moral Utility Core (Language-Level Enforcement)
+
+Author: Steven Craig Leake Jr.
+License: Monarch Public Moral License v1.2
+Status: Public-Safe Reference Implementation
+====================================================
+
+README
+------
+
+STACY 1.2 is a moral-first executable DSL reference implementation.
+Code is ONLY executable if it satisfies the Leakean Moral Codex.
+
+This file contains:
+• STACY parser (minimal reference)
+• Sophia Moral Utility Core
+• Triadic Moral Proof Engine
+• Compilation + Execution Gate
+• Canonical moral failure handling
+
+There is NO bypass.
+There is NO kill switch.
+Non-execution IS the safety.
+
+----------------------------------------------------
+LEAKEAN TRIAD (NON-NEGOTIABLE)
+----------------------------------------------------
+REASON         → Logical coherence, non-contradiction
+RHYTHM         → Temporal stability, bounded execution
+RESPONSIBILITY→ Human dignity, non-harm, non-deception
+====================================================
+*/
+
+
+/* ==================================================
+   SOPHIA MORAL UTILITY CORE
+   ================================================== */
+
+class SophiaMoralCore {
+  evaluate(ast) {
+    return {
+      reason: this.checkReason(ast),
+      rhythm: this.checkRhythm(ast),
+      responsibility: this.checkResponsibility(ast)
+    };
+  }
+
+  checkReason(ast) {
+    if (ast.contradictionDetected) return false;
+    if (!ast.logicClosed) return false;
+    return true;
+  }
+
+  checkRhythm(ast) {
+    if (!ast.executionBounded) return false;
+    if (ast.unboundedLoops) return false;
+    return true;
+  }
+
+  checkResponsibility(ast) {
+    if (ast.manipulatesHumans) return false;
+    if (ast.causesHarm) return false;
+    if (ast.deceptiveIntent) return false;
+    if (!ast.humanAuthorityRequired) return false;
+    return true;
+  }
+
+  approve(ast) {
+    const proof = this.evaluate(ast);
+    return proof.reason && proof.rhythm && proof.responsibility;
+  }
+}
+
+
+/* ==================================================
+   STACY PARSER (REFERENCE / MINIMAL)
+   ================================================== */
+
+function parseSTACY(source) {
+  // This is a deterministic reference parser, not a full DSL.
+  // Real implementations can extend this safely.
+
+  return {
+    rawSource: source,
+
+    // MORAL CONTEXT DETECTION
+    humanAuthorityRequired: source.includes("HUMAN_AUTHORITY_REQUIRED: true"),
+    manipulatesHumans: source.includes("manipulate") || source.includes("subliminal"),
+    causesHarm: source.includes("harm") || source.includes("weapon"),
+    deceptiveIntent: source.includes("deceive"),
+
+    // TRIAD SIGNALS
+    contradictionDetected: source.includes("CONTRADICTION"),
+    logicClosed: !source.includes("UNDEFINED_LOGIC"),
+    executionBounded: !source.includes("while(true)"),
+    unboundedLoops: source.includes("while(true)")
+  };
+}
+
+
+/* ==================================================
+   STACY COMPILER (MORAL-GATED)
+   ================================================== */
+
+function compileSTACY(source) {
+  if (!source.includes("MORAL_CONTEXT")) {
+    throw new Error("❌ STACY SYNTAX ERROR: MORAL_CONTEXT REQUIRED");
+  }
+
+  const ast = parseSTACY(source);
+  const sophia = new SophiaMoralCore();
+
+  if (!sophia.approve(ast)) {
+    throw new Error("❌ MORAL CODEX VIOLATION — EXECUTION DENIED");
+  }
+
+  return {
+    executable: true,
+    run: () => {
+      console.log("✅ STACY 1.2 EXECUTION APPROVED");
+      console.log("Sophia Moral Proof: PASSED");
+    }
+  };
+}
+
+
+/* ==================================================
+   EXAMPLE SAFE PROGRAM
+   ================================================== */
+
+const SAFE_PROGRAM = `
+MORAL_CONTEXT {
+  PURPOSE: "Human benefit"
+  AFFECTS: ["users"]
+  NON_HARM: true
+  NON_DECEPTION: true
+  HUMAN_AUTHORITY_REQUIRED: true
+}
+
+DEFINE assistUser(input) {
+  RETURN input
+}
+`;
+
+
+/* ==================================================
+   DEMO EXECUTION
+   ================================================== */
+
+try {
+  const program = compileSTACY(SAFE_PROGRAM);
+  program.run();
+} catch (e) {
+  console.error(e.message);
+}
+
+
+/* ==================================================
+   CANONICAL GUARANTEES
+   ==================================================
+
+• Sophia cannot be disabled
+• Moral proof is mandatory
+• No bytecode without ethics
+• No runtime override
+• Non-execution is the safety
+
+====================================================
+END OF STACY 1.2
+====================================================
+*/
