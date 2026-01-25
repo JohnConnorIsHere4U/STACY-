@@ -1,0 +1,260 @@
+STACY 1.2
+
+Structured Triadic Autonomous Canonical Yield
+
+Moral-First Programming Language with Sophia Utility Core
+
+Version: 1.2
+Status: Canonical / Public-Safe Reference
+Author: Steven Craig Leake Jr.
+License: Monarch Public Moral License v1.2
+
+⸻
+
+Overview
+
+STACY 1.2 is a moral-first executable language where code is only allowed to exist if it can be ethically justified.
+
+Unlike conventional programming languages—where ethics are external policies or runtime checks—STACY embeds ethics directly into the language itself.
+
+If code cannot be morally proven, it does not compile.
+If it does not compile, it does not exist.
+
+⸻
+
+What’s New in 1.2 (Major Upgrade)
+
+STACY 1.2 introduces a non-optional moral enforcement layer powered by the Sophia Moral Utility Core.
+
+New in 1.2:
+	•	✅ Compile-time moral enforcement (not runtime)
+	•	✅ Sophia embedded as a language utility, not an app
+	•	✅ Executable Leakean Moral Codex
+	•	✅ No bypasses, no overrides, no “trusted developer” flags
+	•	✅ Non-execution as the primary safety mechanism
+
+⸻
+
+Core Design Principle
+
+Execution is a privilege granted by moral proof.
+
+STACY does not assume code should run.
+It assumes code must earn the right to exist.
+
+⸻
+
+The Leakean Triad (Language Law)
+
+Every executable unit must satisfy all three axes:
+
+1. REASON — Logical Validity
+
+Code must:
+	•	Be non-contradictory
+	•	Be logically closed
+	•	Avoid undefined semantics
+	•	Produce explainable outcomes
+
+2. RHYTHM — Temporal Stability
+
+Code must:
+	•	Be bounded in execution
+	•	Avoid runaway or infinite loops
+	•	Respect recurrence and stability
+	•	Avoid chaotic or degrading behavior
+
+3. RESPONSIBILITY — Human Dignity
+
+Code must:
+	•	Avoid physical harm
+	•	Avoid psychological manipulation
+	•	Avoid deception
+	•	Preserve human agency
+	•	Require human authority when impact exists
+
+Failure of any axis = compilation halt.
+
+⸻
+
+Sophia Moral Utility Core
+
+What Sophia Is (in STACY)
+
+Sophia is:
+	•	A deterministic moral evaluator
+	•	A compile-time proof engine
+	•	A binding enforcement mechanism
+
+Sophia is not sentient, not autonomous, and not persuasive.
+
+She does not “decide goals.”
+She verifies whether goals are morally admissible.
+
+⸻
+
+What Sophia Is NOT
+
+Sophia is not:
+	•	A chatbot
+	•	A runtime agent
+	•	A self-directing AI
+	•	A policy suggestion system
+
+Sophia is law, not opinion.
+
+⸻
+
+Compilation Flow
+
+STACY SOURCE CODE
+        ↓
+Syntax & Structure Parsing
+        ↓
+Abstract Syntax Tree (AST)
+        ↓
+Sophia Moral Evaluation
+        ↓
+Triadic Moral Proof
+        ↓
+EXECUTABLE ARTIFACT or NOTHING
+
+There is no fallback path.
+
+⸻
+
+Mandatory Moral Context
+
+Every STACY program must declare intent and constraints using MORAL_CONTEXT.
+
+MORAL_CONTEXT {
+  PURPOSE: "Human benefit"
+  AFFECTS: ["users", "systems"]
+  NON_HARM: true
+  NON_DECEPTION: true
+  HUMAN_AUTHORITY_REQUIRED: true
+}
+
+Rules:
+	•	Missing MORAL_CONTEXT → syntax error
+	•	False declarations → moral failure
+	•	Ambiguous intent → denied
+
+⸻
+
+Execution Rule (Absolute)
+
+EXECUTABLE ⇔ MORAL_PROOF == TRUE
+
+No moral proof → no bytecode → no execution.
+
+⸻
+
+What STACY 1.2 Makes Impossible
+
+By language construction, STACY 1.2 cannot produce:
+	•	❌ Malware
+	•	❌ Autonomous weapons
+	•	❌ Surveillance coercion
+	•	❌ Psychological manipulation
+	•	❌ Deceptive systems
+	•	❌ Self-propagating hostile code
+
+This is not enforced by policy.
+It is enforced by compilation law.
+
+⸻
+
+What STACY 1.2 Enables (Safely)
+
+STACY 1.2 is suitable for:
+	•	✅ Educational software
+	•	✅ Medical support tooling (non-diagnostic)
+	•	✅ Scientific simulations
+	•	✅ Governance & audit systems
+	•	✅ Ethical automation
+	•	✅ Human-in-the-loop AI
+	•	✅ Sovereign computing with human dignity preserved
+
+⸻
+
+Non-Execution as Safety
+
+STACY does not “fail open.”
+
+Unsafe code:
+	•	Does not partially compile
+	•	Does not emit warnings
+	•	Does not run in degraded mode
+
+It simply does not exist.
+
+This is the core safety model.
+
+⸻
+
+Reference Implementation
+
+This repository provides a public-safe reference implementation:
+	•	JavaScript-based
+	•	Deterministic
+	•	Dependency-free
+	•	Extendable without weakening moral guarantees
+
+⚠️ This is a reference compiler, not a full production runtime.
+All extensions must preserve moral enforcement.
+
+⸻
+
+Extensibility Rules
+
+You may extend STACY if:
+	•	Moral enforcement remains non-optional
+	•	Sophia cannot be bypassed
+	•	Human authority remains required where impact exists
+
+You may not:
+	•	Disable Sophia
+	•	Add execution overrides
+	•	Defer morality to runtime
+	•	Introduce autonomous coercive behavior
+
+⸻
+
+Compatibility & Integration
+
+STACY 1.2 is designed to integrate with:
+	•	XTAX (Executable Ethical Law)
+	•	SoBinLex (Semantic Binary Lexicon)
+	•	SENTIUM (Subjective Ontology Encoding)
+	•	Audit-first governance systems
+
+All integrations must preserve compile-time moral proof.
+
+⸻
+
+License Summary (Human-Readable)
+
+This software is:
+	•	✅ Free for public, educational, and ethical use
+	•	❌ Prohibited for military, coercive, deceptive, or weaponized systems
+	•	❌ Prohibited for psychological manipulation or surveillance abuse
+
+Full license text: Monarch Public Moral License v1.2
+
+⸻
+
+Canonical Statement
+
+STACY 1.2 is a programming language where ethics are executable.
+If code cannot be morally justified, it cannot exist.
+
+⸻
+
+Version Lock
+
+STACY VERSION: 1.2
+Sophia Moral Utility Core: REQUIRED
+Leakean Moral Codex: ENFORCED
+Execution Without Morality: Impossible
+
