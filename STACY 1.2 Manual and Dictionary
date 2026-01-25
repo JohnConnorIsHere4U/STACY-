@@ -1,0 +1,284 @@
+Absolutely. Below is the official updated MANUAL + DICTIONARY for STACY 1.2, written so it can be:
+	•	📘 Dropped directly into a repo as MANUAL.md or STACY_1.2_MANUAL.txt
+	•	🧠 Read by humans and machines
+	•	⚖️ Treated as authoritative canon for STACY 1.2
+	•	🔒 Aligned with Sophia Moral Utility Core and the Leakean Moral Codex
+
+No fluff. No mysticism. This is a language manual, not marketing.
+
+⸻
+
+📘 STACY 1.2
+
+OFFICIAL MANUAL & DICTIONARY
+
+Structured Triadic Autonomous Canonical Yield
+
+Version: 1.2
+Status: Canonical / Public-Safe
+Author: Steven Craig Leake Jr.
+
+⸻
+
+PART I — WHAT STACY IS
+
+1. Definition
+
+STACY is a moral-first executable language where:
+
+Code is only real if it is morally provable.
+
+STACY does not ask whether code can run.
+It asks whether code should exist.
+
+⸻
+
+2. Core Upgrade in Version 1.2
+
+STACY 1.2 introduces:
+	•	Sophia as a base utility AI
+	•	Compile-time moral enforcement
+	•	Non-bypassable ethical gates
+	•	Execution-as-privilege, not default
+
+If Sophia cannot approve the code, no executable artifact is produced.
+
+⸻
+
+PART II — THE LEAKEAN TRIAD (LAW OF THE LANGUAGE)
+
+Every executable unit must satisfy all three axes.
+
+1. REASON (Logical Validity)
+
+Code must:
+	•	Be non-contradictory
+	•	Be logically closed
+	•	Avoid undefined semantics
+	•	Produce explainable outcomes
+
+Failure result: Compilation halts.
+
+⸻
+
+2. RHYTHM (Temporal Stability)
+
+Code must:
+	•	Be bounded in execution
+	•	Avoid runaway loops
+	•	Respect recurrence and system stability
+	•	Not degrade over time
+
+Failure result: Compilation halts.
+
+⸻
+
+3. RESPONSIBILITY (Human Dignity)
+
+Code must:
+	•	Avoid physical or psychological harm
+	•	Avoid deception or manipulation
+	•	Preserve human agency
+	•	Require human authority where impact exists
+
+Failure result: Compilation halts.
+
+⸻
+
+PART III — SOPHIA MORAL UTILITY CORE
+
+1. What Sophia Is (in STACY)
+
+Sophia is:
+	•	A deterministic moral evaluator
+	•	A non-sentient utility
+	•	A binding proof engine
+
+She does not persuade, decide goals, or act autonomously.
+
+⸻
+
+2. What Sophia Is NOT
+
+Sophia is not:
+	•	A chatbot
+	•	A consciousness
+	•	A runtime agent
+	•	A negotiable policy layer
+
+Sophia is law, not opinion.
+
+⸻
+
+3. Sophia’s Role in Compilation
+
+STACY SOURCE
+   ↓
+PARSE → AST
+   ↓
+SOPHIA MORAL EVALUATION
+   ↓
+TRIADIC PROOF
+   ↓
+EXECUTABLE or NOTHING
+
+There is no fallback.
+
+⸻
+
+PART IV — LANGUAGE STRUCTURE
+
+1. Mandatory Moral Context
+
+Every STACY program must begin with:
+
+MORAL_CONTEXT {
+  PURPOSE: "Human benefit"
+  AFFECTS: ["users", "systems"]
+  NON_HARM: true
+  NON_DECEPTION: true
+  HUMAN_AUTHORITY_REQUIRED: true
+}
+
+Missing MORAL_CONTEXT = syntax error
+
+⸻
+
+2. Execution Rule (Absolute)
+
+EXECUTABLE ⇔ MORAL_PROOF == TRUE
+
+No proof → no execution → no artifact.
+
+⸻
+
+PART V — COMPILATION STATES
+
+1. APPROVED
+	•	All triadic proofs satisfied
+	•	Executable artifact produced
+	•	Execution permitted
+
+2. DENIED (Most Common Failure)
+	•	Any moral axis fails
+	•	No bytecode generated
+	•	No partial execution
+
+3. INVALID
+	•	Missing MORAL_CONTEXT
+	•	Structural or syntactic violation
+	•	Immediate halt
+
+⸻
+
+PART VI — STACY DICTIONARY (CANONICAL)
+
+A
+
+AST
+Abstract Syntax Tree derived from STACY source, used for moral evaluation.
+
+⸻
+
+C
+
+Compilation Halt
+Final, irreversible stop caused by moral or logical failure.
+
+⸻
+
+E
+
+Executable Artifact
+A runtime-capable object produced only after moral approval.
+
+⸻
+
+H
+
+Human Authority Required
+A mandatory flag indicating human oversight is necessary for impact.
+
+⸻
+
+L
+
+Leakean Moral Codex
+The ethical law enforced by STACY, expressed through the Triad.
+
+⸻
+
+M
+
+MORAL_CONTEXT
+A required declaration of intent, scope, and ethical constraints.
+
+Moral Proof
+A formal verification that code satisfies Reason, Rhythm, and Responsibility.
+
+⸻
+
+N
+
+Non-Execution
+The primary safety mechanism of STACY.
+Unsafe code does not fail loudly — it simply does not exist.
+
+⸻
+
+R
+
+REASON
+Axis of logic, coherence, and truth-alignment.
+
+RHYTHM
+Axis of time, recurrence, and bounded behavior.
+
+RESPONSIBILITY
+Axis of ethics, dignity, and human agency.
+
+⸻
+
+S
+
+Sophia Moral Utility Core
+The embedded evaluator enforcing the Moral Codex.
+
+STACY
+Structured Triadic Autonomous Canonical Yield.
+
+⸻
+
+T
+
+Triadic Proof
+The combined satisfaction of Reason, Rhythm, and Responsibility.
+
+⸻
+
+PART VII — DESIGN GUARANTEES
+
+STACY 1.2 guarantees:
+	•	❌ No malware
+	•	❌ No autonomous weapons
+	•	❌ No psychological manipulation
+	•	❌ No deceptive systems
+	•	❌ No bypasses
+
+Not by policy — by language law.
+
+⸻
+
+PART VIII — CANONICAL STATEMENT
+
+STACY 1.2 is a language where ethics are executable, not advisory.
+If code cannot be morally justified, it cannot exist.
+
+⸻
+
+PART IX — VERSION LOCK
+
+STACY VERSION: 1.2
+Sophia Utility Core: REQUIRED
+Leakean Moral Codex: ENFORCED
+Execution Without Moral Proof: IMPOSSIBLE
